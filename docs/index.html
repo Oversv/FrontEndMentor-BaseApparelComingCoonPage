@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css?t=1599917563503"/>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"><img class="header__img" src="images/logo.svg" alt="logo"/></div>
+    </header>
+    <picture class="cover-image">
+      <source media="(max-width: 768px )" srcset="images/hero-mobile.jpg"/><img class="cover-image__img" src="images/hero-desktop.jpg" alt="hero"/>
+    </picture>
+    <section class="presentation">
+      <h1 class="presentation__title"> <span class="presentation__span">We're </span>coming soon</h1>
+      <p class="presentation__paragraph">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form class="form" id="form">
+        <div class="form__input-container">
+          <input class="form__input" id="email" type="email" name="email" placeholder="Email Address" autocomplete="off"/><small class="form__warning" id="small-warning">Please provid a valid email </small>
+          <div class="form__img-container">
+            <button class="form__button" id="button-submit"><img class="form__img" src="images/icon-arrow.svg"/></button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+  <script src="js/scripts.js?t=1599917563503"> </script>
+</html>

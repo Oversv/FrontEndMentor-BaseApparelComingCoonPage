@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png")
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+        link(rel="stylesheet", href="css/styles.css")
+        title Frontend Mentor | Base Apparel coming soon page
+    body
+        header.header
+            div.header__container
+                img.header__img(src="images/logo.svg", alt="logo")
+        picture.cover-image
+            source(media="(max-width: 768px )", srcset="images/hero-mobile.jpg")            
+            img.cover-image__img(src="images/hero-desktop.jpg" alt="hero")
+        section.presentation
+            h1.presentation__title 
+                span.presentation__span We're 
+                |coming soon
+            p.presentation__paragraph Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+            form#form.form
+                div.form__input-container
+                    input#email.form__input(type="email" name="email" placeholder="Email Address" autocomplete="off")
+                    small#small-warning.form__warning Please provid a valid email 
+                    div.form__img-container
+                        button#button-submit.form__button: img.form__img(src="images/icon-arrow.svg")
+    script(src="js/scripts.js") 
